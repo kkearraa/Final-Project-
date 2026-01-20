@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Buddy</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+
+    <header class="header-main-wraper">
+        <div class="header-container">
+          <a href="index.html">
+            <img class="logo" src="./images/Logo.svg" alt="logo" />
+          </a>
+        <nav>
+          <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+          </div>
+          <ul class="ul-navigation inter-400">
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+            </li>
+            <li>
+              <a href="packages.html">Packages</a>
+            </li>
+            <li>
+              <a href="places.html">Places</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <button class="hover button">Log In</button>
+              </a>
+            
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+
+    <section>
+      <div class="image-wraper">
+        <img class="image-el" src="./images/banner_bg 1.png" alt="banner" />
+        <div class="box-on-image">
+          <h1 class="title">Travel Buddy</h1>
+          <p class="sub-title">Let's start your journey with us, your dream will come true</p>
+          <a href="about.html"><button class="hover button margin">Discover Now</button></a>
+          
+        </div>
+        
+        <div class="travel-search-container">
+          <div class="tab-navigation">
+            <button class="tab-button active">Hotel</button>
+            
+          </div>
+
+          <form class="search-form" id="searchForm">
+            <div class="form-field">
+              <select name="destination" required>
+                <option value="" disabled selected>Choose Place</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="raja-ampat">Raja Ampat, Indonesia</option>
+                <option value="yogyakarta">Yogyakarta, Indonesia</option>
+                <option value="komodo">Komodo Island, Indonesia</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <input type="date" name="check_in_date" placeholder="Check in date" required/>
+            </div>
+
+            <div class="form-field">
+              <input type="date" name="check_out_date" placeholder="Check out date" required/>
+            </div>
+
+            <div class="form-field">
+              <select name="persons" required>
+                <option value="" disabled selected>Person</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+              </select>
+            </div>
+
+            <button type="submit" class="search-button hover">Search</button>
+          </form>
+          <div id="results-container" style="margin-top: 20px; color: white;"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section>
+        <div class="flex-parent">
+          <h1 class="blue-inter-600">Top Places to visit</h1>
+        <h4 class="inter-gray">The Best Places to Visit in Indonesia</h4>
+        <div class="wraper">
+          <div class="row1">
+            <div class="block reveal">
+                <img src="./images/place n1.png" alt="Place n1">
+            </div>
+            <div class="block reveal">
+                <img src="./images/place n2.png" alt="Place n2">
+            </div>
+          </div>
+        <div class="row2">
+            <div class="block reveal delay-1">
+                <img src="./images/place n3.png" alt="Place n3">
+            </div>
+            <div class="block reveal delay-1">
+                <img src="./images/place n4.png" alt="Place n4">
+            </div>  
+        </div>
+        <a href="places.html"><button class="hover button">Discover More</button></a>
+        
+        </div>
+    </section>
+
+
+    
+    <section>
+  <div class="image-wraper2">
+    <img id="main-bg" class="image-el2" src="./images/event_bg 1.png" alt="banner" />
+    
+    <div class="box-on-image2">
+      <div class="elements">
+        <div class="arrow">
+          <button onclick="changeSlide(-1)" style="background: transparent; border: none; cursor: pointer;">
+            <img src="./images/left arrow.png" alt="">
+          </button>
+        </div>
+
+        <div class="upcoming-events">
+          <div class="event-info">
+            <h4 class="up-ev">Upcoming Event</h4>
+            <h1 id="event-title" class="blue-inter-600">Bali - Indonesia</h1>
+            <p id="event-desc" class="gray">
+              Bali is a world-renowned tropical paradise in Indonesia famous for its lush rice terraces, volcanic mountains, and iconic beaches.
+            </p>
+            <p class="gray">Date: 12 Aug 2026</p>
+            <p class="gray">Cost: Start from 899$</p>
+            <p class="gray">Organizer: TravelBuddy</p>
+            <p class="gray">Rating: ⭐⭐⭐⭐⭐</p>
+            <div>
+              <a href="packages.html"><button class="hover button up">Plan Details</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="arrow">
+          <button onclick="changeSlide(1)" style="background: transparent; border: none; cursor: pointer;">
+            <img src="./images/right arrow.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+
+
+    <section>
+      <div class="flex-parent2">
+        <h1 class="blue-inter-600">Top Hotel & Restaurants</h1>
+        <h4 class="inter-gray">The Best Hotel & Restaurants in Indonesia</h4>
+        <div class="wraper2">
+          <div class="box reveal">
+            <img src="./images/hotel 1.png" alt="">
+            <div class="white-box">
+              <h2 class="hotel-grand">The Mulia</h2>
+            <h3 class="stars">⭐⭐⭐⭐⭐(350 Reviews)</h3>
+            <h4 class="place">Nusa Dua, Bali</h4>
+            <h5 class="stars">From 499$</h5>
+            </div>
+          </div>
+          <div class="box reveal">
+            <img src="./images/hotel 2.png" alt="">
+            <div class="white-box">
+              <h2 class="hotel-grand">Amanjiwo</h2>
+            <h3 class="stars">⭐⭐⭐⭐⭐(345 Review)</h3>
+            <h4 class="place">Borobudur, Central Java</h4>
+            <h5 class="stars">From 399$</h5>
+            </div>
+          </div>
+          <div class="box reveal">
+            <img src="./images/hotel 3.png" alt="">
+            <div class="white-box">
+              <h2 class="hotel-grand">Nihi Sumba</h2>
+            <h3 class="stars">⭐⭐⭐⭐⭐(389 Review)</h3>
+            <h4 class="place">Sumba Island</h4>
+            <h5 class="stars">From 499$</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    
+
+
+
+    <section>
+     <div class="flex-parent3">
+       <h1 class="blue-inter-600">We offered best services</h1>
+        <h4 class="inter-gray">The Best Service</h4>
+        <div class="wraper3">
+
+          <div class="box2 reveal">
+            <img src="./images/service 1.png" alt="">
+            <div class="text-box">
+              <h1 class="title-new">Transportation</h1>
+            <h3 class="place">All transportation cost we bear</h3>
+            </div>
+          </div>
+
+          <div class="box2 reveal">
+            <img src="./images/service 2.png" alt="">
+            <div class="text-box">
+              <h1 class="title-new">Guidence</h1>
+            <h3 class="place">We offer the best guidence for you</h3>
+            </div>
+          </div>
+
+          <div class="box2 reveal">
+            <img src="./images/service 3.png" alt="">
+            <div class="text-box">
+              <h1 class="title-new">Accomodation</h1>
+            <h3 class="place">Luxurious and comfortable</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> 
+
+
+    <div id="cookie-notice" class="cookie-banner">
+    <p>We use cookies to improve your experience. By using our site, you agree to our use of cookies.</p>
+    <button id="accept-cookies" class="cookie-btn">Accept</button>
+    </div>
+    <footer>
+      <div class="footer">
+        <div class="row5">
+          <div class="sqr1">
+            <img src="./images/footer logo.svg" alt="">
+          </div>
+          <div class="sqr2">
+            <div class="content">
+              <h1 class="disc-dest">discover destination</h1>
+            <p class="white">Bali</p>
+            <p class="white">Karimun Jawa</p>
+            <p class="white">Jepara</p>
+            <p class="white">Lombok</p>
+            <p class="white">Yogyakarta</p>
+            <p class="white">Flores</p>
+            </div>
+            
+          </div>
+          <div class="sqr3">
+            <div class="content">
+             <h1 class="disc-dest">contact us</h1>
+            <p class="words">24 Shipley St.Arvada, CO 80003</p>
+            <p class="words">09378493810</p>
+            <p class="words">TravelBuddy@gmail.com</p>
+            <h2 class="soc-med">Social Media</h2> 
+
+             <div class="sm-icons">
+              <img src="./images/Instagram.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+              <img src="./images/Twitter Squared.png" alt="">
+            </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+  </body>
+</html>

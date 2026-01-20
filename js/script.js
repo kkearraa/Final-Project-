@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // --- 1. სექციების ანიმაცია (Reveal) ---
+    // სექციების ანიმაცია (Reveal) 
     const initReveal = () => {
         const revealElements = document.querySelectorAll(".reveal");
         const observer = new IntersectionObserver((entries) => {
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initReveal();
 
 
-    // --- 2. COOKIES NOTIFICATION ---
+    // 2. COOKIES NOTIFICATION 
     const cookieNotice = document.getElementById('cookie-notice');
     const acceptBtn = document.getElementById('accept-cookies');
 
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // --- 3. ავტორიზაციის ფორმა (Login) ---
+    // ავტორიზაციის ფორმა (Login) 
     const loginForm = document.getElementById("loginForm");
     const passwordInput = document.getElementById("password");
     const togglePassword = document.getElementById("togglePassword");
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // --- 4. ძებნის ფორმა (Search) ---
+    // 4. ძებნის ფორმა (Search) 
     const searchForm = document.getElementById("searchForm");
     const resultsContainer = document.getElementById("results-container");
 
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- 5. სრულყოფილი ბურგერ მენიუს ლოგიკა ---
+    // 5. სრულყოფილი ბურგერ მენიუს ლოგიკა 
     const burger = document.getElementById('burger');
     const nav = document.querySelector('.ul-navigation');
     const navLinks = document.querySelectorAll('.ul-navigation li a');
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // --- 6. TRAVEL SLIDER LOGIC ---
+    // 6. TRAVEL SLIDER LOGIC 
     const eventData = [
         {
             title: "Bali - Indonesia",
@@ -175,29 +175,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (!bgImage || !titleEl || !descEl) return;
 
-        // 1. Start Fade
         bgImage.classList.add('fade-out');
 
         setTimeout(() => {
-            // 2. Update Index
             currentIndex += direction;
             if (currentIndex >= eventData.length) currentIndex = 0;
             if (currentIndex < 0) currentIndex = eventData.length - 1;
 
             const currentEvent = eventData[currentIndex];
 
-            // 3. Update Content
             titleEl.innerText = currentEvent.title;
             descEl.innerText = currentEvent.description;
             bgImage.src = currentEvent.image;
 
-            // 4. End Fade
             bgImage.classList.remove('fade-out');
         }, 500); 
     };
 
 
-    // --- დამხმარე ფუნქციები ვალიდაციისთვის ---
+    // დამხმარე ფუნქციები ვალიდაციისთვის 
     function showError(fieldId, message) {
         const field = document.getElementById(fieldId);
         const errorDisplay = document.getElementById(`${fieldId}Error`);

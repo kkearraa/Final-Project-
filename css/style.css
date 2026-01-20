@@ -46,7 +46,7 @@
 .image-wraper {
   width: 100%;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   z-index: 1;
 }
 .image-el {
@@ -67,13 +67,9 @@
   flex-direction: column;
 }
 .travel-search-container {
-  position: absolute;
-  bottom: -100px;
-  left: 50%;
-  transform: translateX(-50%);
   max-width: 1000px;
   width: 90%;
-  margin: 0;
+  margin: 20px auto; 
   padding: 20px;
   background-color: white;
   border-radius: 8px;
@@ -281,7 +277,6 @@ option {
   flex-direction: row;
 }
 
-/* Arrow visibility - Desktop shows side arrows, mobile shows bottom arrows */
 .arrows-container {
   display: none;
 }
@@ -1069,7 +1064,7 @@ input.error-border {
   }
   
   .image-wraper {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
   
   .travel-search-container {
@@ -1322,7 +1317,7 @@ input.error-border {
   }
   
   .image-wraper {
-    margin-bottom: 250px;
+    margin-bottom: 50px;
   }
   
   .travel-search-container {
@@ -1531,7 +1526,7 @@ input.error-border {
   }
   
   .image-wraper {
-    margin-bottom: 280px;
+    margin-bottom: 40px;
   }
   
   .travel-search-container {

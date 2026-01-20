@@ -67,7 +67,7 @@
 }
 .travel-search-container {
   position: absolute;
-  bottom: -100px; 
+  bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
   max-width: 1000px;
@@ -110,8 +110,8 @@
   border-radius: 4px;
   font-size: 16px;
   height: 45px;
-  box-sizing: border-box; /* Include padding in height calculation */
-  appearance: none; /* Remove default browser styling */
+  box-sizing: border-box; 
+  appearance: none; 
   background-color: white;
 }
 .search-form input[type="date"]::-webkit-calendar-picker-indicator {
@@ -782,7 +782,7 @@ input.error-border {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #ff5722; 
+  border-left: 6px solid #ff5722;
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
@@ -844,7 +844,7 @@ input.error-border {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #041562; 
+  background-color: #041562;
   color: white;
   padding: 20px;
   border-radius: 8px;
@@ -856,7 +856,7 @@ input.error-border {
 }
 
 .cookie-btn {
-  background-color: #ff5403; 
+  background-color: #ff5403;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -872,7 +872,7 @@ input.error-border {
 }
 
 .burger {
-  display: none; 
+  display: none;
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
@@ -902,7 +902,7 @@ input.error-border {
     position: fixed;
     right: 20px;
     top: 25px;
-    z-index: 2500; 
+    z-index: 2500;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
@@ -942,7 +942,7 @@ input.error-border {
 
   .burger.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #ff5403; 
+    background-color: #ff5403;
   }
   .burger.toggle .line2 {
     opacity: 0;
@@ -1009,13 +1009,12 @@ input.error-border {
     flex-direction: column;
   }
 }
-/* Tablet - 768px */
+
+
 @media screen and (max-width: 768px) {
-  /* Header */
   .burger {
     display: flex;
   }
-
   .ul-navigation {
     position: fixed;
     right: -100%;
@@ -1031,52 +1030,40 @@ input.error-border {
     z-index: 1999;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   }
-
   .ul-navigation.active {
     right: 0;
   }
-
   .burger.active .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
   }
-
   .burger.active .line2 {
     opacity: 0;
   }
-
   .burger.active .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
   }
-
   .logo {
     height: 40px;
     max-width: 150px;
   }
-
-  /* Hero Section */
   .box-on-image {
     max-width: 90%;
     padding: 20px;
     height: auto;
   }
-
   .title {
     font-size: 56px;
     letter-spacing: 3px;
   }
-
   .sub-title {
     font-size: 16px;
     letter-spacing: 1px;
   }
-
   .button {
     min-width: 200px;
     height: 56px;
     font-size: 16px;
   }
-
-  /* Search Container - Fix z-index and positioning */
   .travel-search-container {
     bottom: -120px;
     width: 90%;
@@ -1085,7 +1072,6 @@ input.error-border {
   .image-wraper + section {
     margin-top: 60px;
   }
-
   .search-form {
     flex-direction: column;
     gap: 15px;
@@ -1093,194 +1079,154 @@ input.error-border {
   .form-field {
     width: 100%;
   }
-
   .search-button {
     width: 100%;
     height: 50px;
   }
-
   .search-form select,
   .search-form input[type="date"] {
     height: 45px;
     font-size: 15px;
   }
-  /* Top Places */
   .flex-parent {
     margin-top: 80px !important;
   }
-
   .blue-inter-600 {
     font-size: 28px;
     letter-spacing: 2px;
   }
-
   .inter-gray {
     font-size: 16px;
   }
-
   .wraper {
     margin-top: 40px;
     row-gap: 20px;
   }
-
   .row1,
   .row2 {
     flex-direction: column;
     gap: 20px;
   }
-
   .block {
     max-width: 100%;
     height: auto;
   }
-
   .block img {
     width: 100%;
     height: auto;
   }
   .image-wraper {
-    margin-bottom: 200px; /* More space on tablet */
+    margin-bottom: 200px; 
   }
-
-  /* Upcoming Events Section */
   .image-wraper2 {
     margin-top: 60px;
     min-height: auto;
     padding: 40px 0;
   }
-
   .box-on-image2 {
     position: relative;
     max-width: 90%;
     height: auto;
     padding: 20px;
   }
-
   .elements {
     flex-direction: column;
     gap: 20px;
   }
-
-  /* Arrows side by side at bottom */
   .arrows-container {
     display: flex;
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
   }
-
   .arrow {
     width: 60px;
     height: 60px;
     min-width: 60px;
     min-height: 60px;
   }
-
   .arrow img {
     width: 24px;
     height: 24px;
   }
-
   .upcoming-events {
     max-width: 100%;
     height: auto;
     padding: 30px 20px;
     order: 1;
   }
-
   .event-info {
     margin-top: 0;
     margin-left: 0;
   }
-
   .up-ev {
     font-size: 16px;
   }
-
   #event-title {
     font-size: 28px;
   }
-
   .gray {
     font-size: 16px;
     margin-top: 15px;
   }
-
-  /* Hotels Section */
   .flex-parent2 {
     margin-top: 80px;
     height: auto;
     padding: 0 20px;
   }
-
   .wraper2 {
     flex-direction: column;
     gap: 30px;
     margin-top: 40px;
   }
-
   .box {
     max-width: 100%;
     height: auto;
   }
-
   .box img {
     width: 100%;
     height: auto;
   }
-
-  /* Services Section */
   .flex-parent3 {
     margin-top: 80px;
     height: auto;
     padding: 0 20px;
   }
-
   .wraper3 {
     flex-direction: column;
     gap: 30px;
   }
-
   .box2 {
     max-width: 100%;
     height: auto;
   }
-
   .box2 img {
     width: 100%;
     height: auto;
   }
-
-  /* Footer */
   .footer {
     margin-top: 100px;
   }
-
   .row5 {
     flex-direction: column;
     height: auto;
     padding: 40px 20px;
     gap: 40px;
   }
-
   .sqr1,
   .sqr2,
   .sqr3 {
     max-width: 100%;
     text-align: center;
   }
-
   .content {
     align-items: center;
   }
-
-  /* Contact Page */
   .contact-container {
     flex-direction: column;
     padding: 0 20px;
     margin-top: 80px;
   }
-
   .container,
   .container2 {
     flex-direction: column;
@@ -1288,7 +1234,6 @@ input.error-border {
     margin-top: 80px;
     padding: 0 20px;
   }
-
   .left-block,
   .right-block {
     max-width: 100%;
@@ -1297,543 +1242,316 @@ input.error-border {
   }
 }
 
-/* Mobile - 480px */
 @media screen and (max-width: 480px) {
-  /* Header */
   .ul-navigation {
     width: 85%;
   }
-
   .logo {
     height: 35px;
     max-width: 120px;
   }
-
-  /* Hero Section */
   .title {
     font-size: 42px;
     letter-spacing: 2px;
   }
-
   .sub-title {
     font-size: 14px;
     letter-spacing: 0.5px;
   }
-
   .button {
     min-width: 180px;
     height: 50px;
     font-size: 14px;
   }
-
   .margin {
     margin-top: 30px;
   }
   .image-wraper {
-    margin-bottom: 250px; /* Even more space on mobile */
+    margin-bottom: 250px; 
   }
-
-  /* Search Container */
-   .travel-search-container {
+  .travel-search-container {
     bottom: -140px;
     width: 95%;
     padding: 12px;
   }
-
   .tab-button {
     font-size: 14px;
     padding: 8px 12px;
   }
-
   .search-form select,
   .search-form input[type="date"] {
     height: 42px;
     font-size: 14px;
     padding: 8px 10px;
   }
-
   .search-button {
     height: 45px;
     font-size: 14px;
   }
-
-  /* Top Places */
   .flex-parent {
     margin-top: 60px !important;
   }
-
   .blue-inter-600 {
     font-size: 24px;
     letter-spacing: 1px;
   }
-
   .inter-gray {
     font-size: 14px;
   }
-
   .wraper {
     margin-top: 30px;
     row-gap: 15px;
   }
-
-  /* Upcoming Events */
   .image-wraper2 {
     margin-top: 40px;
     padding: 30px 0;
   }
-
   .box-on-image2 {
     max-width: 95%;
     padding: 15px;
   }
-
   .arrow {
     width: 50px;
     height: 50px;
     min-width: 50px;
     min-height: 50px;
   }
-
   .arrow img {
     width: 20px;
     height: 20px;
   }
-
   .upcoming-events {
     padding: 25px 15px;
   }
-
   #event-title {
     font-size: 24px;
   }
-
   .gray,
   .up-ev {
     font-size: 14px;
   }
-
   .up {
     margin-top: 20px;
   }
-
-  /* Hotels */
   .flex-parent2 {
     margin-top: 60px;
     padding: 0 15px;
   }
-
   .wraper2 {
     gap: 25px;
     margin-top: 30px;
   }
-
   .hotel-grand {
     font-size: 20px;
     margin-top: 25px;
   }
-
   .stars,
   .place {
     font-size: 16px;
     margin-top: 15px;
   }
-
-  /* Services */
   .flex-parent3 {
     margin-top: 60px;
     padding: 0 15px;
   }
-
   .wraper3 {
     gap: 25px;
   }
-
   .title-new {
     font-size: 20px;
     letter-spacing: 2px;
   }
-
   .text-box {
     margin-top: 25px;
   }
-
-  /* Footer */
   .footer {
     margin-top: 80px;
   }
-
   .row5 {
     padding: 30px 15px;
     gap: 35px;
   }
-
   .disc-dest {
     font-size: 20px;
     margin-bottom: 20px;
   }
-
   .white,
   .words {
     font-size: 16px;
     margin-bottom: 12px;
   }
-
-  /* Hotel Card Results */
   .hotel-card {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
-
   .book-btn {
     width: 100%;
     padding: 10px 20px;
   }
-
-  /* Cookie Banner */
   .cookie-banner {
     max-width: 90%;
     right: 5%;
     bottom: 10px;
     padding: 15px;
   }
-
   .cookie-banner p {
     font-size: 14px;
   }
-
-  /* Contact */
   .contact-container {
     padding: 0 15px;
     margin-top: 60px;
   }
-
   .contact-info {
     padding-top: 30px;
     gap: 20px;
   }
 }
 
-/* Small Mobile - 320px */
 @media screen and (max-width: 320px) {
-  /* Header */
   .header-container {
     padding: 10px;
   }
-
   .logo {
     height: 30px;
     max-width: 100px;
   }
-
-  /* Hero Section */
   .title {
     font-size: 32px;
     letter-spacing: 1px;
   }
-
   .sub-title {
     font-size: 12px;
     letter-spacing: 0.3px;
   }
-
   .button {
     min-width: 150px;
     height: 45px;
     font-size: 13px;
   }
   .image-wraper {
-    margin-bottom: 280px; /* Maximum space on small mobile */
+    margin-bottom: 280px; 
   }
-  /* Search Container */
-   .travel-search-container {
+  .travel-search-container {
     bottom: -150px;
     width: 95%;
     padding: 10px;
   }
-
   .tab-button {
     font-size: 13px;
     padding: 6px 10px;
   }
-
   .search-form select,
   .search-form input[type="date"] {
     height: 40px;
     font-size: 13px;
   }
-
   .search-button {
     height: 42px;
     font-size: 13px;
     padding: 8px 20px;
   }
-
-  /* Sections */
   .flex-parent,
   .flex-parent2,
   .flex-parent3 {
     margin-top: 50px !important;
     padding: 0 10px;
   }
-
   .blue-inter-600 {
     font-size: 20px;
   }
-
   .inter-gray {
     font-size: 13px;
   }
-
-  /* Upcoming Events */
   .image-wraper2 {
     margin-top: 30px;
     padding: 20px 0;
   }
-
   .box-on-image2 {
     padding: 10px;
   }
-
   .arrow {
     width: 45px;
     height: 45px;
     min-width: 45px;
     min-height: 45px;
   }
-
   .arrow img {
     width: 18px;
     height: 18px;
   }
-
   .arrows-container {
     gap: 10px;
   }
-
   .upcoming-events {
     padding: 20px 12px;
   }
-
   #event-title {
     font-size: 20px;
   }
-
   .gray,
   .up-ev {
     font-size: 13px;
     margin-top: 12px;
   }
-
-  /* Hotels & Services */
   .hotel-grand,
   .title-new {
     font-size: 18px;
     margin-top: 20px;
   }
-
   .stars,
   .place {
     font-size: 14px;
     margin-top: 12px;
   }
-
-  /* Footer */
   .footer {
     margin-top: 60px;
   }
-
   .row5 {
     padding: 25px 10px;
     gap: 30px;
   }
-
   .disc-dest {
     font-size: 18px;
     margin-bottom: 15px;
   }
-
   .white,
   .words {
     font-size: 14px;
     letter-spacing: 1px;
   }
-
-  /* Cookie Banner */
   .cookie-banner {
     padding: 12px;
     font-size: 12px;
   }
-
   .cookie-btn {
     padding: 8px 15px;
     font-size: 13px;
   }
 }
-
-/* Fix for elements positioning and z-index */
 section {
   position: relative;
   z-index: 1;
 }
-
 .image-wraper {
   position: relative;
   z-index: 1;
 }
-
 .travel-search-container {
   position: relative;
   z-index: 10;
 }
 
-/* Ensure upcoming events arrows work on mobile */
 @media screen and (max-width: 768px) {
-  /* Update the elements structure for mobile */
   .elements {
     flex-direction: column;
   }
-  
-  /* Create container for arrows */
   .elements > .arrow:first-child,
   .elements > .arrow:last-child {
     display: none;
   }
-  
-  /* Show arrows in a new container after upcoming-events */
   .upcoming-events::after {
-    content: '';
+    content: "";
     display: block;
   }
 }
-
-
-
-
-/* @media (max-width: 768px) {
-  .box-on-image {
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .title {
-    font-size: 50px;
-  }
-  .button {
-    max-width: 100px;
-    width: 100%;
-  }
-  .sub-title {
-    font-size: 15px;
-  }
-  .search-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-  }
-  .form-field,
-  .search-form select,
-  .search-form input,
-  .search-button {
-    width: 100% !important;
-    height: 50px;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  .tab-navigation {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  .travel-search-container {
-    position: relative;
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  .contact-container {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .container{
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 480px) {
-  .search-form {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .blue-inter-600 {
-    font-size: 24px;
-  }
-  .inter-gray {
-    font-size: 18px;
-  }
-  .sqr1 {
-    max-width: 250px;
-    width: 100%;
-    height: auto;
-  }
-  .sqr2 {
-    max-width: 235px;
-    width: 100%;
-    height: auto;
-  }
-  .sqr3 {
-    max-width: 245px;
-    width: 100%;
-    height: auto;
-  }
-  .wraper {
-  row-gap: 20px;
-  }
-  .upcoming-events {
-    max-width: 450px;
-    width: 100%;
-  }
-  .container2 {
-    margin: o auto;
-  }
-}
-@media (max-width: 320px) {
-  .blue-inter-600 {
-    font-size: 18px;
-  }
-  .inter-gray {
-    font-size: 14px;
-  }
-  .upcoming-events {
-    max-width: 300px;
-    width: 100%;
-  }
-  .button {
-    max-width: 120px;
-    width: 100%;
-  }
-
-}
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-  opacity: 0;
-}
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-} */
